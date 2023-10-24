@@ -1,8 +1,27 @@
-# React + Vite
+# RESTy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RESTy is a simple React-based API client that lets users interact with RESTful services.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Make requests to any RESTful API.
+- Supports various HTTP methods: GET, POST, PUT, DELETE.
+- Displays the API response in a clear, readable format.
+
+## Components
+
+1. **App**: The main container.
+2. **Header**: Displays the application's title.
+3. **Form**: Input for API URLs and HTTP method selection.
+4. **Results**: Showcases the API response.
+5. **Footer**: Displays footer information.
+
+## Getting Started
+
+1. Clone this repository:
+2. Navigate to the project directory:
+3. Install dependencies:
+4. Run the application:
+5. Start the application
+
+![UML](uml.png)
