@@ -25,3 +25,5 @@ RESTy is a simple React-based API client that lets users interact with RESTful s
 5. Start the application
 
 ![UML](uml.png)
+
+[Deployed Netlify](https://adnan-resty.netlify.app/)
