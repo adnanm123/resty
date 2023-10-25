@@ -14,6 +14,8 @@ form {
   width: 75%;
   margin: 11rem;
   margin-top: 4rem;
+  margin-bottom: 0; // Reduce bottom margin
+
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
@@ -21,6 +23,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     span {
       font-weight: bold;
       font-size: 1.2rem;
@@ -52,7 +55,7 @@ form {
   .methods {
     display: flex;
     justify-content: space-between;
-    margin: 1rem ;
+    margin: 1rem;
 
     span {
       flex: 1;
@@ -62,7 +65,7 @@ form {
       border-radius: $radius;
       cursor: pointer;
       transition: background-color 0.3s;
-      margin:  5px;
+      margin: 5px;
 
       &:first-child {
         margin-left: 0;
@@ -72,7 +75,8 @@ form {
         margin-right: 0;
       }
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         background-color: $activeMethodColor;
         color: white;
       }
