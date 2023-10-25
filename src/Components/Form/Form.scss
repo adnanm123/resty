@@ -1,26 +1,89 @@
-$backgroundColor: #efefef;
-$radius: 40%;
+$backgroundColor: #f7f7f7;
+$borderColor: #e0e0e0;
+$activeMethodColor: #007acc;
+$inputBorderColor: #d4d4d4;
+$radius: 5px;
+$buttonColor: #007acc;
 
 form {
-  display: inline-block;
-  margin: auto;
-  width: 200px;
+  display: block;
+  background-color: $backgroundColor;
+  border: 1px solid $borderColor;
+  border-radius: $radius;
+  align-items: center;
+  width: 75%;
+  margin: 11rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
   label {
     display: flex;
-    margin: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
 
-    &.methods {
-      span {
-        cursor: pointer;
-        margin-right: 1rem;
-        padding: .25rem .5rem;
-        background: #ccc;
+    input[type="text"] {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid $inputBorderColor;
+      border-radius: $radius;
+      margin-right: 1rem;
+    }
 
-        &:hover, &.active {
-          background: #fff;
-        }
+    button {
+      background-color: $buttonColor;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: $radius;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($buttonColor, 10%);
       }
     }
+  }
+
+  .methods {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem ;
+
+    span {
+      flex: 1;
+      text-align: center;
+      padding: .5rem 0;
+      border: 1px solid $borderColor;
+      border-radius: $radius;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin:  5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover, &.active {
+        background-color: $activeMethodColor;
+        color: white;
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid $inputBorderColor;
+    border-radius: $radius;
+    min-height: 120px;
   }
 }

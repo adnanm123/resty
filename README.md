@@ -2,11 +2,19 @@
 
 RESTy is a simple React-based API client that lets users interact with RESTful services.
 
-## Features
+## Development Phases
 
-- Make requests to any RESTful API.
-- Supports various HTTP methods: GET, POST, PUT, DELETE.
-- Displays the API response in a clear, readable format.
+### Phase 1: Initial Setup
+
+- Establish a basic React environment.
+- Set up an initial application state.
+- Facilitate primary rendering mechanisms.
+
+### Phase 2: User Interaction & State Management
+
+- Transition the application to functional components.
+- Integrate the `useState()` hook for state management.
+- Implement mechanisms to capture and manage user input.
 
 ## Components
 
