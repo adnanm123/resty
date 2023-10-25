@@ -1,9 +1,13 @@
 $backgroundColor: #f5f5f5;
+$primaryColor: #003366;
+$secondaryColor: #007ACC;
+$shadowColor: rgba(0, 0, 0, 0.1);
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
@@ -13,6 +17,59 @@ body {
   #root {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
   }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+header, footer {
+  background-color: $primaryColor;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.api-info, .results {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px $shadowColor;
+
+  // Styles for the strong tag
+  strong {
+    text-align: center;
+    display: block;
+  }
+}
+
+button {
+  background-color: $secondaryColor;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondaryColor, 10%);
+  }
+}
+
+pre {
+  font-family: 'Courier New', monospace;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  text-align: center;
 }

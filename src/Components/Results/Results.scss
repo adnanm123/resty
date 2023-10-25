@@ -8,7 +8,7 @@ $highlightBackground: #eaeaea;
 
 section {
   display: block;
-  background-color: $backgroundColor;
+  background-color: $highlightBackground; // Adjusted the background color here
   border: 1px solid $borderColor;
   border-radius: $radius;
   width: 75%;
@@ -23,7 +23,7 @@ section {
     margin: 0;
     padding: 0.5rem;
     border-radius: $radius;
-    background-color: $highlightBackground;
+    background-color: $backgroundColor; // Adjusted the background color here
     
     .key {
       color: $keyColor;
