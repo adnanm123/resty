@@ -16,6 +16,19 @@ RESTy is a simple React-based API client that lets users interact with RESTful s
 - Integrate the `useState()` hook for state management.
 - Implement mechanisms to capture and manage user input.
 
+### Phase 3: Connecting to Live APIs
+
+- Connect RESTy to live APIs.
+- Implement fetching and displaying remote data.
+- Focus on servicing GET requests.
+- Allow users to enter the URL to an API and issue a GET request.
+- Display the results returned from an API request in a readable format.
+- Extend the application to include the ability to send HTTP requests and display response data.
+- Refactor application methods to allow for browser-side HTTP requests to be sent.
+- Enable users to set a URL, method, and request body.
+- Ensure all relevant request and response data is displayed to the user.
+- Update the Results component to use a 3rd party component to "pretty print" the JSON in a color-coded, user-friendly format.
+
 ## Components
 
 1. **App**: The main container.
@@ -26,11 +39,10 @@ RESTy is a simple React-based API client that lets users interact with RESTful s
 
 ## Getting Started
 
-1. Clone this repository:
-2. Navigate to the project directory:
-3. Install dependencies:
-4. Run the application:
-5. Start the application
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Install dependencies.
+4. Run the application.
 
 ![UML](uml.png)
 
