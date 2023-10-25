@@ -1,0 +1,27 @@
+$backgroundColor: #0f3660;  // Deep navy background color for the header
+$titleColor: #ffffff;      // White color for the "RESTY" title
+$radius: 5px;
+$headerHeight: 70px;
+$padding: 1rem;
+$shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $backgroundColor;
+  border-radius: $radius $radius 0 0;
+  width: 100%;
+  height: $headerHeight;
+  position: relative;
+  z-index: 10;
+  padding: $padding;
+  box-shadow: $shadow;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $titleColor;
+    margin: 0;
+    letter-spacing: -1.5px;
+  }
+}
