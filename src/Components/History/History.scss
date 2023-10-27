@@ -1,0 +1,52 @@
+.history-container {
+    width: 100%;
+    background-color: #f5f5f5;  // Soft background to add some contrast
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);  // A more refined shadow
+    border: 1px solid #e0e0e0;  // Subtle border for a cleaner look
+    margin: 20px 0;
+    box-sizing: border-box;
+
+    h3 {
+        font-size: 24px;
+        color: #333;  // Darker color for better visibility
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ddd;  // A divider to separate the title and the content
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #e7e7e7;  // A lighter border
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 15px; 
+            background-color: #ffffff;
+
+            &:hover {
+                background-color: #f0f0f0;
+                transform: translateY(-3px);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            }
+
+            strong {
+                font-size: 16px;
+                font-weight: 600;
+                color: #007BFF;  // A fresh blue, often associated with links or interactive elements
+                margin-right: 15px;
+                display: inline-block;
+                min-width: 70px;  // Ensuring all methods align
+                text-align: center;
+            }
+        }
+    }
+}

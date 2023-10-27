@@ -8,7 +8,7 @@ $highlightBackground: #eaeaea;
 
 section {
   display: block;
-  background-color: $highlightBackground; // Adjusted the background color here
+  background-color: $highlightBackground;
   border: 1px solid $borderColor;
   border-radius: $radius;
   width: 75%;
@@ -23,7 +23,7 @@ section {
     margin: 0;
     padding: 0.5rem;
     border-radius: $radius;
-    background-color: $backgroundColor; // Adjusted the background color here
+    background-color: $backgroundColor;
     
     .key {
       color: $keyColor;
@@ -39,4 +39,31 @@ section {
     font-size: 1.2rem;
     margin-top: 1rem;
   }
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+
+  .spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
