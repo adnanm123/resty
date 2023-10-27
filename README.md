@@ -29,6 +29,16 @@ RESTy is a simple React-based API client that lets users interact with RESTful s
 - Ensure all relevant request and response data is displayed to the user.
 - Update the Results component to use a 3rd party component to "pretty print" the JSON in a color-coded, user-friendly format.
 
+### Phase 4: Track History
+
+- We'll be tracking every API call and storing it in history.
+- Users will see a list of their previous API calls, allowing them to view results quickly.
+- Application will fetch data from the provided URL with the chosen method.
+- Store the API request and returned data in state.
+- Update the list of previous API calls.
+- Display the response headers and results in a "pretty printed" JSON format.
+- Refactor state management to use the `useReducer()` hook.
+
 ## Components
 
 1. **App**: The main container.
